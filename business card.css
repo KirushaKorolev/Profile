@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Philosopher', sans-serif;
+}
+h4 {
+    font-family: 'Caveat', cursive;
+    text-shadow: 1px 2px 2px #8d898b;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+img {
+    width: 180px;
+    height: 180px;
+    border-radius: 51% 49% 50% 50% / 50% 49% 51% 50% ;
+}
+header {
+    padding: 60px 30px;
+    background-size: 100%;
+    background-position: top;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px black;
+    border-bottom-style:dotted;
+}
+h1 {
+    color: rgb(79, 3, 78);
+    text-shadow: 2px 5px 2px #d3bcb5;
+}
+p {
+    color: rgb(42, 14, 42);
+    text-shadow: 1px 2px 2px #c1c1c1;
+    font-size: 15px;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    text-align: center;
+    padding: 50px 100px;
+}
+section:nth-child(1) {
+    grid-row: span 2;
+}
+section:nth-child(2) {
+    grid-row: span 2;
+}
+section:nth-child(3) {
+    margin-top: 50px;
+    grid-column: span 2;
+}
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+h3 {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+section:nth-child(2) > section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+section:nth-child(3) > section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+body {
+    background-image: url("background-main.jpg");
+    background-size: contain;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+a {
+    font-family: 'Caveat', cursive;
+    text-shadow: 1px 2px 2px #8d898b;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+footer {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    padding: -50px -100px;
+}
+@media (max-width: 800px) {
+    * {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        grid-template-columns: 1fr !important;
+    }
+    main,header {
+        padding: 25px 10px;
+        display: block;
+    }
+    h1 {
+        margin: 25px 0;
+    }
+    h2:first-of-type{
+        margin-top: 0;
+    }
+    h2 {
+        margin-top: 25px;
+    }
+    h3 {
+        margin-top: 15px;
+    }
+    img {
+        margin: 0 auto;
+    }
+
+}
